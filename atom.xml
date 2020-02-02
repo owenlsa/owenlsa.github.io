@@ -2,13 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://owenlsa.github.io/</id>
     <title>LLLLLLn</title>
-    <updated>2020-02-02T15:08:02.399Z</updated>
+    <updated>2020-02-02T15:26:44.998Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://owenlsa.github.io/"/>
     <link rel="self" href="https://owenlsa.github.io/atom.xml"/>
     <logo>https://owenlsa.github.io/images/avatar.png</logo>
     <icon>https://owenlsa.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, LLLLLLn</rights>
+    <entry>
+        <title type="html"><![CDATA[精简美化版百度首页]]></title>
+        <id>https://owenlsa.github.io/post/jing-jian-mei-hua-ban-bai-du-shou-ye</id>
+        <link href="https://owenlsa.github.io/post/jing-jian-mei-hua-ban-bai-du-shou-ye">
+        </link>
+        <updated>2020-02-02T15:22:38.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://owenlsa.github.io//post-images/1580657012885.png" alt="" loading="lazy"><br>
+忘了是从哪找来的了，本身自带工具栏，被我删除了只保留搜索框和百度的logo。</p>
+<p>**源码地址：**https://github.com/owenlsa/bd<br>
+**在线演示：**https://owenlsa.github.io/bd/</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello world]]></title>
         <id>https://owenlsa.github.io/post/hello-world~</id>
