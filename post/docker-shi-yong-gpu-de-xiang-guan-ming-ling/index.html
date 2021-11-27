@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | My Pages</title>
+<title>Docker使用GPU的相关命令 | My Pages</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,13 @@
 
 
 
-    <meta name="description" content="owenlsa.github.io">
+    <meta name="description" content="Docker GPU相关命令
+安装官方docker和NVIDIA Container Toolkit
+官方docker安装教程for Ubuntu
+NVIDIA Container Toolkit
+启动容器Container（后台运行）
+映..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,10 +94,50 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">Docker使用GPU的相关命令</h2>
+            <div class="post-date">2021-11-27</div>
             
+            <div class="post-content" v-pre>
+              <h1 id="docker-gpu相关命令">Docker GPU相关命令</h1>
+<h2 id="安装官方docker和nvidia-container-toolkit">安装官方docker和NVIDIA Container Toolkit</h2>
+<p><a href="https://docs.docker.com/engine/install/ubuntu/#installation-methods">官方docker安装教程for Ubuntu</a></p>
+<p><a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#step-2-install-nvidia-container-toolkit">NVIDIA Container Toolkit</a></p>
+<h2 id="启动容器container后台运行">启动容器Container（后台运行）</h2>
+<h3 id="映射全部gpu">映射全部GPU</h3>
+<pre><code class="language-shell"># docker run -it -d -p 本机端口:容器端口 --gpus all --name 创建的容器名字 --ipc host -v 本机里的路径:容器里的路径 镜像名字 /bin/bash
+# e.g.
+docker run -it -d --restart always -p 8022:22 --gpus all --name tf115docker --ipc host -v /home/pc3090/lsa:/workspace/lsa tf115 /bin/bash
+</code></pre>
+<h3 id="映射个别gpu">映射个别GPU</h3>
+<pre><code class="language-shell">docker run -it -d -p 8222:22 --gpus '&quot;device=1&quot;  --name gaoang_tf2 --ipc host -v /home/pc3080/gaoang:/workspace/gaoang tf2 /bin/bash
+</code></pre>
+<h2 id="进入后台运行的容器container">进入后台运行的容器Container</h2>
+<pre><code class="language-shell"># docker exec -it 容器Container的名字 /bin/bash
+# e.g.
+docker exec -it tf115docker /bin/bash
+</code></pre>
+<h2 id="查看正在运行的容器container">查看正在运行的容器Container</h2>
+<pre><code class="language-shell"># 两个命令效果完全一样
+docker ps -a
+docker container ls
+</code></pre>
+<h2 id="查看已有镜像image">查看已有镜像Image</h2>
+<pre><code class="language-shell">docker images
+</code></pre>
+<h2 id="从容器container保存到镜像image">从容器Container保存到镜像Image</h2>
+<pre><code class="language-shell"># docker commit  ‘容器Container ID’  ‘镜像Image名字'
+docker commit 64ad tf115
+</code></pre>
+
+            </div>
+            
+            
+
+            
+
           </div>
+
         </div>
       </div>
     </div>
