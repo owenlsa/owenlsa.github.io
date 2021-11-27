@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://owenlsa.github.io</id>
-    <title>My Pages</title>
-    <updated>2021-11-27T06:46:42.519Z</updated>
+    <title>LLLLnnnn&apos;s Pages</title>
+    <updated>2021-11-27T08:26:13.585Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://owenlsa.github.io"/>
     <link rel="self" href="https://owenlsa.github.io/atom.xml"/>
-    <subtitle>owenlsa.github.io</subtitle>
+    <subtitle>Blog on Github Pages</subtitle>
     <logo>https://owenlsa.github.io/images/avatar.png</logo>
     <icon>https://owenlsa.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, My Pages</rights>
+    <rights>All rights reserved 2021, LLLLnnnn&apos;s Pages</rights>
     <entry>
         <title type="html"><![CDATA[使用Python获取本机IP]]></title>
         <id>https://owenlsa.github.io/post/shi-yong-python-huo-qu-ben-ji-ip/</id>
