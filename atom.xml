@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://owenlsa.github.io</id>
     <title>LLLLnnnn&apos;s Pages</title>
-    <updated>2021-11-28T15:02:37.293Z</updated>
+    <updated>2021-11-28T15:05:37.325Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://owenlsa.github.io"/>
     <link rel="self" href="https://owenlsa.github.io/atom.xml"/>
@@ -21,76 +21,12 @@
 <script src="https://gist.github.com/owenlsa/b106395ca72fd3902313b32b0bb8ff1a.js"></script>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[使用Python获取本机IP]]></title>
-        <id>https://owenlsa.github.io/post/shi-yong-python-huo-qu-ben-ji-ip/</id>
-        <link href="https://owenlsa.github.io/post/shi-yong-python-huo-qu-ben-ji-ip/">
-        </link>
-        <updated>2021-11-27T06:40:59.000Z</updated>
-        <content type="html"><![CDATA[<pre><code>import socket
-# ipv4
-def get_ip():
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    try:
-        # doesn't even have to be reachable
-        s.connect(('1.1.1.1', 1))
-        IP = s.getsockname()[0]
-    except Exception:
-        IP = '127.0.0.1'
-    finally:
-        s.close()
-    return IP
-
-# ipv6
-def get_ip():
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    try:
-        # doesn't even have to be reachable
-        s.connect(('fd00::/8', 1))
-        IP = s.getsockname()[0]
-    except Exception:
-        IP = '127.0.0.1'
-    finally:
-        s.close()
-    return IP
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Docker使用GPU的相关命令]]></title>
+        <title type="html"><![CDATA[命令合集]]></title>
         <id>https://owenlsa.github.io/post/docker-shi-yong-gpu-de-xiang-guan-ming-ling/</id>
         <link href="https://owenlsa.github.io/post/docker-shi-yong-gpu-de-xiang-guan-ming-ling/">
         </link>
         <updated>2021-11-27T06:39:55.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="docker-gpu相关命令">Docker GPU相关命令</h1>
-<h2 id="安装官方docker和nvidia-container-toolkit">安装官方docker和NVIDIA Container Toolkit</h2>
-<p><a href="https://docs.docker.com/engine/install/ubuntu/#installation-methods">官方docker安装教程for Ubuntu</a></p>
-<p><a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#step-2-install-nvidia-container-toolkit">NVIDIA Container Toolkit</a></p>
-<h2 id="启动容器container后台运行">启动容器Container（后台运行）</h2>
-<h3 id="映射全部gpu">映射全部GPU</h3>
-<pre><code class="language-shell"># docker run -it -d -p 本机端口:容器端口 --gpus all --name 创建的容器名字 --ipc host -v 本机里的路径:容器里的路径 镜像名字 /bin/bash
-# e.g.
-docker run -it -d --restart always -p 8022:22 --gpus all --name tf115docker --ipc host -v /home/pc3090/lsa:/workspace/lsa tf115 /bin/bash
-</code></pre>
-<h3 id="映射个别gpu">映射个别GPU</h3>
-<pre><code class="language-shell">docker run -it -d -p 8222:22 --gpus '&quot;device=1&quot;  --name gaoang_tf2 --ipc host -v /home/pc3080/gaoang:/workspace/gaoang tf2 /bin/bash
-</code></pre>
-<h2 id="进入后台运行的容器container">进入后台运行的容器Container</h2>
-<pre><code class="language-shell"># docker exec -it 容器Container的名字 /bin/bash
-# e.g.
-docker exec -it tf115docker /bin/bash
-</code></pre>
-<h2 id="查看正在运行的容器container">查看正在运行的容器Container</h2>
-<pre><code class="language-shell"># 两个命令效果完全一样
-docker ps -a
-docker container ls
-</code></pre>
-<h2 id="查看已有镜像image">查看已有镜像Image</h2>
-<pre><code class="language-shell">docker images
-</code></pre>
-<h2 id="从容器container保存到镜像image">从容器Container保存到镜像Image</h2>
-<pre><code class="language-shell"># docker commit  ‘容器Container ID’  ‘镜像Image名字'
-docker commit 64ad tf115
-</code></pre>
-]]></content>
+        <content type="html"><![CDATA[<p>From Github Gist</p>
+<script src="https://gist.github.com/owenlsa/0fea7c50d5f7fe885335ed7dd7ad45aa.js"></script>]]></content>
     </entry>
 </feed>

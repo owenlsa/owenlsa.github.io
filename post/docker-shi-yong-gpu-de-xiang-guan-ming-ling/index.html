@@ -9,14 +9,14 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="author" content="kveln">
-  <title>Docker使用GPU的相关命令 | LLLLnnnn&#39;s Pages</title>
+  <title>命令合集 | LLLLnnnn&#39;s Pages</title>
   <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- <link href="https://owenlsa.github.io/media/css/bootstrap.min.css" rel="stylesheet"> -->
   <!--  <link href="https://owenlsa.github.io/media/css/all.min.css" rel="stylesheet" type="text/css"> -->
   <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link rel="alternate" type="application/rss+xml" title="Docker使用GPU的相关命令 | LLLLnnnn&#39;s Pages » Feed" href="https://owenlsa.github.io/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="命令合集 | LLLLnnnn&#39;s Pages » Feed" href="https://owenlsa.github.io/atom.xml">
   <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
   <link href="https://owenlsa.github.io/styles/main.css" rel="stylesheet">
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
@@ -25,7 +25,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-    <meta property="og:description" content="Docker使用GPU的相关命令"/>
+    <meta property="og:description" content="命令合集"/>
     <meta property="og:url" content="https://owenlsa.github.io/post/docker-shi-yong-gpu-de-xiang-guan-ming-ling/"/>
     <meta property="og:locale" content="zh-CN"/>
     <meta property="og:type" content="website"/>
@@ -81,10 +81,10 @@
           	<span class="tags">
           	 
         </span>
-            <h1>Docker使用GPU的相关命令</h1>
+            <h1>命令合集</h1>
             <span class="meta">
             	Posted on
-              2021-11-27，2 min read
+              2021-11-27，1 min read
             </span>
           </div>
         </div>
@@ -97,37 +97,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <h1 id="docker-gpu相关命令">Docker GPU相关命令</h1>
-<h2 id="安装官方docker和nvidia-container-toolkit">安装官方docker和NVIDIA Container Toolkit</h2>
-<p><a href="https://docs.docker.com/engine/install/ubuntu/#installation-methods">官方docker安装教程for Ubuntu</a></p>
-<p><a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#step-2-install-nvidia-container-toolkit">NVIDIA Container Toolkit</a></p>
-<h2 id="启动容器container后台运行">启动容器Container（后台运行）</h2>
-<h3 id="映射全部gpu">映射全部GPU</h3>
-<pre><code class="language-shell"># docker run -it -d -p 本机端口:容器端口 --gpus all --name 创建的容器名字 --ipc host -v 本机里的路径:容器里的路径 镜像名字 /bin/bash
-# e.g.
-docker run -it -d --restart always -p 8022:22 --gpus all --name tf115docker --ipc host -v /home/pc3090/lsa:/workspace/lsa tf115 /bin/bash
-</code></pre>
-<h3 id="映射个别gpu">映射个别GPU</h3>
-<pre><code class="language-shell">docker run -it -d -p 8222:22 --gpus '&quot;device=1&quot;  --name gaoang_tf2 --ipc host -v /home/pc3080/gaoang:/workspace/gaoang tf2 /bin/bash
-</code></pre>
-<h2 id="进入后台运行的容器container">进入后台运行的容器Container</h2>
-<pre><code class="language-shell"># docker exec -it 容器Container的名字 /bin/bash
-# e.g.
-docker exec -it tf115docker /bin/bash
-</code></pre>
-<h2 id="查看正在运行的容器container">查看正在运行的容器Container</h2>
-<pre><code class="language-shell"># 两个命令效果完全一样
-docker ps -a
-docker container ls
-</code></pre>
-<h2 id="查看已有镜像image">查看已有镜像Image</h2>
-<pre><code class="language-shell">docker images
-</code></pre>
-<h2 id="从容器container保存到镜像image">从容器Container保存到镜像Image</h2>
-<pre><code class="language-shell"># docker commit  ‘容器Container ID’  ‘镜像Image名字'
-docker commit 64ad tf115
-</code></pre>
-
+          <p>From Github Gist</p>
+<script src="https://gist.github.com/owenlsa/0fea7c50d5f7fe885335ed7dd7ad45aa.js"></script>
           
         <div class="comment">
           
