@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://owenlsa.github.io</id>
     <title>LLLLnnnn&apos;s Pages</title>
-    <updated>2021-12-03T14:20:02.759Z</updated>
+    <updated>2021-12-03T14:36:39.887Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://owenlsa.github.io"/>
     <link rel="self" href="https://owenlsa.github.io/atom.xml"/>
@@ -11,12 +11,37 @@
     <icon>https://owenlsa.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, LLLLnnnn&apos;s Pages</rights>
     <entry>
-        <title type="html"><![CDATA[Android APP项目合集]]></title>
+        <title type="html"><![CDATA[美化版百度首页，适合作为首页]]></title>
+        <id>https://owenlsa.github.io/post/CJvToVo7e/</id>
+        <link href="https://owenlsa.github.io/post/CJvToVo7e/">
+        </link>
+        <updated>2021-12-03T14:23:37.000Z</updated>
+        <content type="html"><![CDATA[<p>Github项目地址<a href="https://github.com/owenlsa/SimpleBaiduNav">SimpleBaiduNav</a></p>
+<h2 id="使用说明">使用说明</h2>
+<p>一个静态的html，单独放在任何http服务器底下即可。</p>
+<p><a href="/nav/">效果演示</a><br>
+<img src="https://owenlsa.github.io/post-images/1638541607080.jpg" alt="" loading="lazy"></p>
+<h2 id="拓展功能">拓展功能</h2>
+<p>可以在下方增加拓展的链接，单击百度的logo可以打开。效果如图<br>
+<img src="https://owenlsa.github.io/post-images/1638541984649.jpg" alt="" loading="lazy"></p>
+<pre><code class="language-html">&lt;div id=&quot;favlist&quot; style=&quot;display: none&quot;&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;a href=&quot;地址&quot;&gt;&lt;/a&gt;
+    &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icon6.png&quot; &gt;&lt;/p&gt;
+    &lt;p class=&quot;url&quot;&gt;书签名称&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[个人Android APP项目合集]]></title>
         <id>https://owenlsa.github.io/post/1Hzt5IOxl/</id>
         <link href="https://owenlsa.github.io/post/1Hzt5IOxl/">
         </link>
         <updated>2021-12-03T14:15:32.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="wastedata"><a href="https://github.com/owenlsa/WasteData">WasteData</a></h2>
+        <content type="html"><![CDATA[<p>均为简单APP实现基础功能，练手和部分项目需要。</p>
+<h2 id="wastedata"><a href="https://github.com/owenlsa/WasteData">WasteData</a></h2>
 <ul>
 <li>耗费流量，主要用于wifi信号采集项目</li>
 <li>也可用于测速（连接地址为海外，不一定准确）</li>
@@ -38,7 +63,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[命令合集]]></title>
+        <title type="html"><![CDATA[常用命令合集]]></title>
         <id>https://owenlsa.github.io/post/docker-shi-yong-gpu-de-xiang-guan-ming-ling/</id>
         <link href="https://owenlsa.github.io/post/docker-shi-yong-gpu-de-xiang-guan-ming-ling/">
         </link>
