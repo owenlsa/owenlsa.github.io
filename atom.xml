@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://owenlsa.github.io</id>
     <title>LLLLnnnn&apos;s Pages</title>
-    <updated>2021-11-29T02:30:00.112Z</updated>
+    <updated>2021-12-03T14:20:02.759Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://owenlsa.github.io"/>
     <link rel="self" href="https://owenlsa.github.io/atom.xml"/>
@@ -10,6 +10,33 @@
     <logo>https://owenlsa.github.io/images/avatar.png</logo>
     <icon>https://owenlsa.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, LLLLnnnn&apos;s Pages</rights>
+    <entry>
+        <title type="html"><![CDATA[Android APP项目合集]]></title>
+        <id>https://owenlsa.github.io/post/1Hzt5IOxl/</id>
+        <link href="https://owenlsa.github.io/post/1Hzt5IOxl/">
+        </link>
+        <updated>2021-12-03T14:15:32.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="wastedata"><a href="https://github.com/owenlsa/WasteData">WasteData</a></h2>
+<ul>
+<li>耗费流量，主要用于wifi信号采集项目</li>
+<li>也可用于测速（连接地址为海外，不一定准确）</li>
+</ul>
+<h2 id="摔倒轨迹检测"><a href="https://github.com/owenlsa/StepOrientFall">摔倒轨迹检测</a></h2>
+<ul>
+<li>粗略在屏幕绘制行走轨迹</li>
+<li>标记出轨迹上摔倒的点</li>
+</ul>
+<h2 id="flip"><a href="https://github.com/owenlsa/Flip">Flip</a></h2>
+<ul>
+<li>翻转手机实现计数</li>
+</ul>
+<h2 id="checkport"><a href="https://github.com/owenlsa/CheckPort">CheckPort</a></h2>
+<ul>
+<li>检测服务器端口开放情况（TCP）</li>
+<li>可保存服务器和需要查询的端口，用于再次快速查询</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[命令合集]]></title>
         <id>https://owenlsa.github.io/post/docker-shi-yong-gpu-de-xiang-guan-ming-ling/</id>
